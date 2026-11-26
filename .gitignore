@@ -1,0 +1,43 @@
+# Innovus run artifacts
+dbs/*
+!dbs/.gitkeep
+logs/*
+!logs/.gitkeep
+rpt/*
+!rpt/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+extLogDir/
+innovus_temp_*/
+
+# Per-run logs and command files
+*.log
+*.logv
+innovus.cmd*
+flex*.log
+
+# Generated data and reports
+*.enc/
+*.tarpt.gz
+*.summary.gz
+*.spef
+*.def.gz
+*.gds
+clock.spec
+rc_model.bin
+example1Sram.geom.rpt*
+example1Sram.conn.rpt
+
+# Make stage markers
+/init_design
+/floorplan
+/place_opt
+/cts
+/route_opt
+/chipfinish
+
+# Tool configuration and editor swap files
+.cadence/
+*.swp
+*.swo
